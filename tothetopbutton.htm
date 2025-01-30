@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll to Top Button</title>
+  <link rel="stylesheet" href="css/tothetop.css">
+</head>
+<body>
+  <div style="height: 2000px; padding: 20px;">
+    Scroll down and click the button to return to the top.
+  </div>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+
+  <script>
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    // Function to scroll to the top
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    // Show or hide the button based on scroll position
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) { // Show the button when scrolled down 100px
+        scrollToTopBtn.style.display = "block";
+      } else { // Hide the button when near the top
+        scrollToTopBtn.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  height: 100%;
+  width: 250px; /* Sidebar always has width */
+  position: fixed;
+  top: 0;
+  left: 0; /* Initially hidden to the left */
+  background-color: #111;
+  transition: left 0.3s; /* Smooth sliding */
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+#main {
+  padding: 16px;
+}
+
+/* Arrow button that sticks to the sidebar */
+.togglebtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: translateX(250px);
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  height: 100px; /* Tall button */
+  width: 40px;   /* Narrow button */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: left 0.3s; /* Matches sidebar movement */
+  z-index: 2; /* Ensures it stays visible */
+}
+
+.togglebtn:hover {
+  background-color: #666;
+}
+
+.arrow {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <!-- Arrow button sticks to the sidebar -->
+  <button id="toggleButton" class="togglebtn" onclick="toggleNav()">
+    <span class="arrow">→</span>
+  </button>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<div id="main">
+  <h2>Sliding Sidebar with Fixed Width</h2>
+  <p>This collapsible sidebar slides in and out without affecting the rest of the page layout.</p>
+</div>
+
+<script>
+function toggleNav() {
+  const sidebar = document.getElementById("mySidebar");
+  const toggleButton = document.getElementById("toggleButton");
+
+  if (sidebar.style.left === "0px") {
+    sidebar.style.left = "-250px"; // Slide out
+    toggleButton.innerHTML = '<span class="arrow">→</span>'; // Change arrow to right
+  } else {
+    sidebar.style.left = "0px"; // Slide in
+    toggleButton.innerHTML = '<span class="arrow">←</span>'; // Change arrow to left
+  }
+}
+</script>
+
+</body>
+</html>
