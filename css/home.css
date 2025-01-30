@@ -1,0 +1,207 @@
+*{
+padding: 0;
+margin: 0;
+text-decoration: none;
+list-style: none;
+box-sizing: border-box;
+
+}
+
+.home-container{
+  padding-top: 120px;
+  width: 100%;
+  height: fit-content;
+  background-color: rgba(142, 118, 59, 0.632);
+  opacity: 0.9;
+}
+
+.home-content {
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+  background-color: rgba(241, 216, 154, 0.838);
+  border-radius: 20px;
+  padding: 15px;
+  margin: 0% auto;
+}
+
+
+.home-content-box {
+  background-color: antiquewhite;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5px;
+  height: fit-content;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.home-content-box:last-of-type{
+  margin-bottom: 0;
+}
+
+
+.home-content-heading{
+  width: 100%;
+  font-size: 22px;
+  border-bottom: 2px solid black;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.article-box{
+  width: 100%;
+  padding:5px;
+  border-bottom: 1px solid black;
+}
+.article-box:last-of-type{
+  border-bottom: none;
+}
+
+.article-title{
+  width: 100%;
+  font-size: 18px;
+}
+
+.article-title:hover{
+  text-decoration: underline;
+}
+.article-meta{
+  width: 100%;
+  font-size: 14px;
+  color: rgba(54, 39, 39, 0.753);
+}
+
+
+.college-rank-list-container{
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgba(142, 118, 59, 0.632);
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.college-box{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 10px;
+  border-bottom: 2px solid black;
+  height: fit-content;
+}
+.college-rank-list-image{
+  width:17%;
+  aspect-ratio:1;
+  height: auto;
+  background-color: azure;
+  padding:2px;
+  border-radius: 3px;
+
+}
+
+.college-rank-list-data{
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+
+}
+.college-list-name-rank{
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
+.college-list-rank{
+
+  background-color: azure;
+  border-radius: 3px;
+  font-size: larger;
+  padding: 0 5px;
+}
+.college-list-name{
+  background-color: azure;
+  border-radius: 3px;
+  font-size: larger;
+  padding: 0 5px;
+}
+
+.catagory{
+  background-color: azure;
+  border-radius: 3px;
+  padding: 0% 3px;
+  width: fit-content;
+}
+.college-list-synopsis{
+  background-color: azure;
+  border-radius: 3px;
+  padding: 0% 3px;
+  width: fit-content;
+  font-size: smaller;
+  overflow-y: hidden;
+}
+
+
+@media (max-width:1300px) {
+  .college-rank-list-container{
+    width: 85%;
+  }
+  
+}
+
+@media (max-width:1070px) {
+  .home-content{
+    width: 90%;
+  }  
+}
+@media (max-width:885px) {
+  .college-rank-list-image{
+    width: 25%;
+  }
+  
+}
+
+@media (max-width:850px) {
+  .home-content{
+    width: 95%;
+
+  }  
+  .home-container{
+    padding-top: 80px;
+  }
+  .college-rank-list-container{
+    width: 90%;
+  }
+  .college-rank-list-image{
+    width: 25%;
+  }
+}
+
+@media (max-width:480px) {
+  .home-content{
+    width: 100%;
+  }  
+  .home-content{
+    padding:0px;
+    border-radius: 0;
+  }
+  .home-content-box{
+    border-radius: 0;
+  }
+  .college-rank-list-container{
+    width: 100%;}
+  .college-box{
+    gap: 3px;
+  }
+  .college-rank-list-image{
+    width: 30%;
+  }
+}
+
+

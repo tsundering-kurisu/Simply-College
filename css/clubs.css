@@ -1,0 +1,260 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+.club-main {
+    background-color: rgba(142, 118, 59, 0.632);
+    opacity: 0.9;
+    width: 100%;
+    height: fit-content;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.club-content {
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    background-color: rgba(241, 216, 154, 0.838);
+    border-radius: 20px;
+    padding: 5px;
+    padding: 15px;
+
+}
+
+
+
+.club-content>div {
+    width: 100%;
+
+
+
+
+}
+
+.club-page-heading {
+    font-size: 26px;
+    border-bottom: 2px solid black;
+    text-align: center;
+
+}
+
+.club-content-box {
+    background-color: antiquewhite;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5px;
+    height: fit-content;
+}
+
+.box-content {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: baseline;
+    padding: 2px;
+}
+
+.box-content-title {
+    width: 100%;
+    font-size: large;
+    border-bottom: 1px solid black;
+}
+
+.box-content div {
+    margin: 5px;
+}
+
+.street-view {
+    width: 35%;
+    aspect-ratio: 1;
+    height: auto;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.quote {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+.actual-heading {
+    font-size: 40px;
+}
+
+.club-content-box2 {
+    display: flex;
+    flex-direction: row;
+    background-color: antiquewhite;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 2.5px;
+    height: fit-content;
+    justify-content: space-around;
+}
+
+.boxed-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: fit-content;
+
+}
+
+.boxed-content2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 32%;
+    height: fit-content;
+
+}
+
+.boxed-content2-info {
+    width: 30%;
+    padding: 10px;
+    height: fit-content;
+    text-align: center;
+
+}
+
+.boxed-content3 {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: baseline;
+    width: 60%;
+    height: 100%;
+
+}
+
+
+.street-view2 {
+    width: 100%;
+    aspect-ratio: calc(16/9);
+    height: auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px 0 0 0;
+}
+
+.boxed-content div {
+    text-align: center;
+}
+
+.figure-title {
+    text-align: center;
+}
+
+
+.street-view3 {
+    width: 100%;
+    aspect-ratio: 1;
+    height: auto;
+    margin: 10px 0 0 0;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+
+
+}
+
+
+.street-view3-above-fig {
+
+    width: 100%;
+
+}
+
+
+.boxed-content3-photo {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+    width: 100%;
+    height: fit-content;
+}
+
+.boxed-content3-text {
+    width: 100%;
+    height: fit-content;
+    padding: 15px;
+}
+
+#street-view2-width-offset {
+    width: 45%;
+}
+#street-view2-width-offset2 {
+    width: 80%;
+}
+
+
+.format4-above{
+    width: 100%;
+}
+
+.format4-text{
+    text-align: center;
+    font-size: larger;
+}
+
+#format4-id{
+    padding: 15px;
+}
+
+
+.format6-text{
+    width: 60%;
+    padding:10px;
+}
+.format6-photo{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+    width: 30%;
+}
+
+.format6-text ul li{
+    margin:4px;
+    list-style-type:circle;
+    margin:20px;
+    line-height: 1.5;
+}
+
+
+.club-link{
+    color:cadetblue;
+    font-weight: bolder;
+}
+
+
+
+@media (max-width:850px){
+    .club-content{
+        width: 95%;
+    }
+}

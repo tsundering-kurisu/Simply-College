@@ -1,0 +1,250 @@
+:root {
+
+  --orange:Black;
+  --cyan:#bc2525;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif
+}
+
+/*Nav-----------------------------------*/
+.nav-bar {
+  opacity: .85;
+  background: transparent;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  color: white;
+  z-index: 1000;
+  transition: transform 0.5s ease, top 0.3s ease;
+  flex-direction: column;
+}
+
+#nav-bar-1 {
+  background-image: url("cream.jpg");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  top: 0;
+  height: 70px;
+
+}
+
+#nav-bar-2 {
+  background-image: url("Flower.jpg");
+  background-repeat: none;
+  background-size: cover;
+  
+  top: 70px;
+  height: 40px;
+  flex-direction: row;
+
+}
+
+.navcol {
+  color: var(--orange);
+  height: 100%;
+  align-content: center;
+  padding: 0 10px;
+  font-size: 22px;
+  transition: color 0.3s ease, background-color 0.4s ease;
+  border-radius: 25px;
+}
+
+.navcol:hover {
+  background-color: var(--orange);
+  color: white;
+}
+
+.navcol:first-child {
+  margin-right: auto;
+}
+
+.navcol:first-child:hover {
+  background-color:inherit;
+}
+
+
+
+
+.navbarup {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 67%;
+}
+/* c64c39 */
+
+.navbardown {
+
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  border-top: 1px solid rgba(51, 51, 51, 0.768);
+  border-bottom: 1px solid rgba(51, 51, 51, 0.768);
+  height: 33%;
+  color: var(--orange);
+  padding: 0 0 0 5px;
+}
+
+.navbardown a {
+
+  text-decoration: none;
+  color: #bc2525;
+
+}
+
+.navbardown a:hover {
+  text-decoration: underline;
+
+}
+
+
+.navcol2 {
+  color: var(--orange);
+  height: 100%;
+  align-content: center;
+  padding: 0 10px;
+  font-size: 17px;
+  transition: color 0.4s ease, background-color 0.4s ease;
+  text-wrap:nowrap ;
+  border-radius: 20px ;
+}
+
+.navcol2:hover {
+  background-color: var(--orange);
+  color: white;
+}
+
+/*Searchbar-----------------------------------*/
+.searchbar {
+  display: flex;
+  width: max-content;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 40px;
+  background-color: var(--cyan);
+  transition: background 0.3s ease;
+}
+
+.search-input {
+  width:300px ;
+  font-size: 15px;
+  font-family: 'poppins', sans-serif;
+  margin-left: 8px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #1f1f1f;
+
+}
+
+.searchbar:focus-within{
+  background: var(--orange);
+}
+
+.search-input::placeholder,
+.search-icon {
+  color: rgb(255, 233, 168);
+}
+
+/*Fonts-----------------------------------*/
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.poppins-regular2 {
+  font-family: "Poppins", serif;
+  font-weight: 550;
+  font-style: normal;
+}
+
+
+.poppins-semibold {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*Font-Logo-----------------------------------*/
+
+.flogo-nav {
+  position: relative;
+  top: 7px;
+  width: 220px;
+  height: auto;
+}
+
+#menu-icon{
+  background-color: #bc2525;
+  border-radius: 50%;
+  padding: 7px;
+  display: none;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+
+#searchbar-svg.focused path {
+  stroke: #ff0000; /* Change this to the color you desire */
+}
+
+@media (max-width:1000px) {
+  div .navcol{
+    display: none;
+  }
+  #div-o-flogo{
+    display: block;
+  }
+  #menu-icon{
+    display: block;
+  }
+}
+
+
+
+@media (max-width:850px) {
+  #nav-bar-2{
+    display: none;
+  }
+  .navcol2{
+    font-size: 26px;
+    align-content: center;
+    width: 90%;
+    margin:5px;
+    height: 60px;
+  }
+  
+}
+
+
+@media (max-width:480px) {
+  .search-input {
+    width:120px;
+  }
+  .flogo-nav {
+    position: relative;
+    top: 7px;
+    width: 120px;
+    height: auto;
+  }
+  .navcol2{
+    font-size: 18px;
+
+  }
+
+}

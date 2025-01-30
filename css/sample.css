@@ -1,0 +1,289 @@
+*{
+  text-decoration: none;
+  margin: 0%;
+  padding: 0%;
+}
+
+a{
+  color: inherit;
+}
+
+:root {
+  --color1: hsl(16, 57%, 70%);
+  --color2: #5394AC;
+}
+
+.main-image {
+  background-size: cover;
+  background-position: center;
+  background-image: url("allahabad2.jpg");
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  opacity: .75;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.608);
+}
+
+.contentmain {
+  background-color: rgba(142, 118, 59, 0.632);
+  opacity: 0.9;
+  
+}
+
+.college-logo {
+  width: 15.25vw;
+  aspect-ratio: 1;
+  border: 1px solid rgb(0, 0, 0);
+  opacity: 0.9;
+  margin-bottom: 5px;
+}
+
+.college-name {
+  width: 100%;
+  font-size: 26px;
+  border-bottom: 1px solid black;
+}
+
+.address-est {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+
+.short-address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+.ranks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  
+}
+
+#ranks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+}
+
+.map-pin {
+  color: red;
+}
+
+.rank-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.rank-value {
+  width: 100%;
+  position: relative;
+  bottom: 10px;
+
+}
+
+.content-button{
+  width: fit-content;
+  height:fit-content;
+  padding: 10px;
+  background-color: #bc2525;
+  border-radius: 7px;
+  font-size: larger;
+  color: rgba(255, 233, 168, 0.774);
+
+}
+
+.content-button:hover{
+  background-color: #bc2525ba;
+  color: rgb(255, 233, 168);
+}
+
+#synopsis{
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+#synopsis-content{
+  border-bottom: 1px solid black;
+  padding: 5px 0;
+
+}
+.extra-info{
+  border-top: 1px solid black;
+  width: 100%;
+}
+.extra-infoQ{
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  margin: 5px 0;
+}
+
+#this-id-exists-to-give-border-below-altnames
+{
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+}
+
+.contentmain2{
+  width: 80%;
+  height: fit-content;
+  background-color: rgba(241, 216, 154, 0.838);
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.type1{
+  width: 80%;
+  height:fit-content;
+  background-color: antiquewhite;
+  margin: 0 auto;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: baseline;
+  padding: 10px;
+  
+}
+
+.type1-head{
+  border-bottom: 1px solid black;
+  width:100%;
+}
+
+.type1 > div{
+  margin:5px;
+}
+
+.type1-content{
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  height: fit-content;
+  width: 100%;
+}
+
+
+
+.person{
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  background-color: rgba(142, 118, 59, 0.632);
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.person div {
+  width: 100%;
+}
+.person-info{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  flex:0 0 80%;
+  font-size: 14px;
+}
+.person-info div{
+  width: 100%;
+  margin: 0 5px;
+}
+
+.person-photo{
+  height:fit-content;
+  flex: 0 0 20%;
+}
+.person-photo1{
+width: 100%;
+border: 1px solid black;
+}
+
+
+.person-name{
+  border-bottom: 1px solid black;
+  text-wrap: nowrap;
+  margin: 5px;
+  font-size: 18px;
+}
+
+.buttons{
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
+  gap: 10px;
+
+}
+
+.college-web-button{
+  background-color: rgb(64, 64, 212);
+}
+
+.college-web-button:hover{
+  background-color: rgba(64, 64, 212, 0.708);
+}
+
+
+#fee-structure{
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+@media (max-width:1070px) {
+
+    .contentmain2 {
+      width: 90%;
+    } 
+
+
+}
+
+
+@media (max-width:850px) {
+  .main-image{
+    height:300px;
+  }
+  .college-logo{
+    width: 22.5vw;
+  }
+  .contentmain2{
+    width: 95%;
+   
+  }
+  .type1{
+    width: 90%;
+  }
+}
+
+@media (max-width:480px) {
+  
+.main-image {
+  height: 225px;
+}
+  
+}

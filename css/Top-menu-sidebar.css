@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Button to open the panel */
+
+
+  /* Side panel styles */
+  .side-panela {
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -300px; /* Hidden off-screen */
+    width: 300px;
+    height: 100%;
+    background-color: rgb(241, 216, 154);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.804);
+    transition: right 0.3s ease;
+    z-index: 10000;
+    padding: 20px;
+    
+  }
+
+  .side-panela.opena {
+    right: 0; /* Slide in */
+  }
+
+  /* Close button inside the panel */
+  .close-btna {
+    display: block;
+    margin-left: auto;
+    padding: 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10000;
+  }
+
+
+  @media (max-width:480px) {
+    
+  }
